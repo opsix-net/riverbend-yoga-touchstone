@@ -152,3 +152,23 @@ fieldset fieldset { background: var(--ivory); }
   .site-footer { color: var(--ink); background: transparent; }
   .site-footer a { color: var(--ink); }
 }
+
+/* Touchstone 4: preference selection and in-place form feedback. */
+[hidden] { display: none !important; }
+.preference-panel { padding: 1.5rem; border: 1px solid var(--forest); background: var(--sage); }
+.preference-panel > label { display: block; font-weight: 700; margin-bottom: .5rem; }
+.preference-panel > select { width: 100%; max-width: 32rem; }
+.preference-help { font-size: .9375rem; margin-top: .75rem; }
+.class-result { margin-block: 1.5rem; padding: 1.25rem; background: var(--ivory); border-left: 4px solid var(--forest); }
+.preference-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1rem; }
+.secondary-button { background: var(--ivory); color: var(--forest); }
+.secondary-button:hover { background: var(--forest); color: var(--ivory); }
+button:disabled { cursor: default; border-style: dashed; background: var(--sage); color: var(--forest); }
+.feedback { margin-top: 1rem; font-weight: 700; }
+.feedback:empty, .field-error:empty, .form-summary:empty { display: none; }
+.saved-preference { margin-top: 1.25rem; padding: .75rem 1rem; border-left: 3px solid var(--forest); background: var(--sage); font-size: .9375rem; }
+.saved-preference a { margin-left: .5rem; }
+.field-error { display: block; margin-top: .35rem; font-size: .9375rem; font-weight: 700; }
+[aria-invalid="true"] { border-width: 2px !important; border-style: dashed !important; }
+.form-summary { padding: .75rem; border: 2px solid var(--forest); font-weight: 700; background: var(--ivory); }
+@media (min-width: 48rem) { .preference-panel { padding: 2rem; } }

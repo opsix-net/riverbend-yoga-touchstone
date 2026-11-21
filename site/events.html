@@ -7,6 +7,7 @@
   <meta name="description"
     content="Explore monthly workshops and request class information.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -29,6 +30,10 @@
       <p class="eyebrow">Practice in good company</p>
       <h1>Workshops and interest requests</h1>
       <p class="lede">Explore something new, ask a question, and take the next step at your own pace.</p>
+      <p class="saved-preference" data-saved-preference hidden>
+        <span data-saved-class-label></span>
+        <a href="services.html#class-preference">Change choice</a>
+      </p>
     </div>
   </header>
   <main class="site-main events-layout" id="main-content" tabindex="-1">
@@ -69,34 +74,40 @@
     <section class="request-panel" id="request-spot" aria-labelledby="request-title">
       <h2 id="request-title">Request a spot or ask a question</h2>
       <p class="form-note" id="form-note">This coursework sample checks your entries but
-        does not send a booking or reserve a place. Use sample details.</p>
-      <form action="events.html#request-spot" method="get"
+        does not send a booking or reserve a place. Use sample details. Only your class preference is saved in browser storage.</p>
+      <p class="form-note" id="preference-notice" hidden></p>
+      <p class="form-summary" id="form-summary" role="status" aria-live="polite" tabindex="-1"></p>
+      <form id="interest-form" action="events.html#request-spot" method="get"
         aria-describedby="form-note">
-        <fieldset>
+        <fieldset id="contact-details">
           <legend>Your contact details</legend>
           <p>
             <label for="full-name">Name (required)</label><br>
             <input id="full-name" name="full-name" type="text"
-              autocomplete="name" minlength="2" maxlength="80" required>
+              autocomplete="name" minlength="2" maxlength="80" aria-describedby="full-name-error" required>
+            <span class="field-error" id="full-name-error"></span>
           </p>
           <p>
             <label for="email">Email (required)</label><br>
             <input id="email" name="email" type="email"
-              autocomplete="email" maxlength="254" required>
+              autocomplete="email" maxlength="254" aria-describedby="email-error" required>
+            <span class="field-error" id="email-error"></span>
           </p>
           <p>
             <label for="contact-method">Preferred contact method (required)</label><br>
-            <select id="contact-method" name="contact-method" required>
+            <select id="contact-method" name="contact-method" aria-describedby="contact-method-error" required>
               <option value="">Choose a contact method</option>
               <option value="email">Email</option>
               <option value="phone">Phone call</option>
             </select>
+            <span class="field-error" id="contact-method-error"></span>
           </p>
           <p>
-            <label for="phone">Phone number (optional)</label><br>
+            <label for="phone">Phone number (required for phone calls)</label><br>
             <input id="phone" name="phone" type="tel"
-              autocomplete="tel" maxlength="30" aria-describedby="phone-help">
-            <small id="phone-help">Include a number if you prefer a call.</small>
+              autocomplete="tel" maxlength="30" aria-describedby="phone-help phone-error">
+            <span class="field-error" id="phone-error"></span>
+            <small id="phone-help">For a phone call, include 7 to 15 digits; spaces and common phone punctuation are welcome.</small>
           </p>
         </fieldset>
 
@@ -104,7 +115,7 @@
           <legend>Your class or event interest</legend>
           <p>
             <label for="interest">Class or event (required)</label><br>
-            <select id="interest" name="interest" required>
+            <select id="interest" name="interest" aria-describedby="interest-error" required>
               <option value="">Choose a class or event</option>
               <option value="gentle">Gentle Foundations</option>
               <option value="vinyasa">Vinyasa Flow</option>
@@ -114,32 +125,36 @@
               <option value="desk-reset">Desk-to-Mat Reset workshop</option>
               <option value="rest-restore">Rest and Restore workshop</option>
             </select>
+            <span class="field-error" id="interest-error"></span>
           </p>
-          <fieldset>
+          <fieldset id="experience-group">
             <legend>Experience level (required)</legend>
             <p>
               <input id="experience-new" name="experience" type="radio"
-                value="new" required>
+                value="new" aria-describedby="experience-error" required>
               <label for="experience-new">I am new to yoga</label>
             </p>
             <p>
               <input id="experience-some" name="experience" type="radio"
-                value="some">
+                value="some" aria-describedby="experience-error">
               <label for="experience-some">I have tried a few classes</label>
             </p>
             <p>
               <input id="experience-regular" name="experience" type="radio"
-                value="regular">
+                value="regular" aria-describedby="experience-error">
               <label for="experience-regular">I have a regular practice</label>
             </p>
+            <span class="field-error" id="experience-error"></span>
           </fieldset>
           <p>
             <label for="message">Message (required, 10-1200 characters)</label><br>
             <textarea id="message" name="message" rows="5" cols="28"
-              minlength="10" maxlength="1200" required></textarea>
+              minlength="10" maxlength="1200" aria-describedby="message-error" required></textarea>
+            <span class="field-error" id="message-error"></span>
           </p>
         </fieldset>
         <p><button type="submit">Check interest request</button></p>
+        <p class="feedback" id="form-result" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>

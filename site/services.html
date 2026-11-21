@@ -7,6 +7,7 @@
   <meta name="description"
     content="Explore group classes and private yoga sessions.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -29,9 +30,39 @@
       <p class="eyebrow">Find your own rhythm</p>
       <h1>Classes and private sessions</h1>
       <p class="lede">Gentle movement, steady flow, or time to rest. There is room for your pace.</p>
+      <p class="saved-preference" data-saved-preference hidden>
+        <span data-saved-class-label></span>
+        <a href="services.html#class-preference">Change choice</a>
+      </p>
     </div>
   </header>
   <main class="site-main" id="main-content" tabindex="-1">
+    <section class="preference-panel" id="class-preference" aria-labelledby="preference-title" hidden>
+      <p class="eyebrow">Your practice, your choice</p>
+      <h2 id="preference-title">Find your next class</h2>
+      <p>Explore a class, then remember your choice for your next visit.</p>
+      <label for="class-choice">Which class would you like to explore?</label>
+      <select id="class-choice" aria-describedby="preference-help">
+        <option value="">Choose a class</option>
+        <option value="gentle">Gentle Foundations</option>
+        <option value="vinyasa">Vinyasa Flow</option>
+        <option value="restorative">Restorative Pause</option>
+        <option value="private">Private session</option>
+      </select>
+      <p class="preference-help" id="preference-help">Only your class choice is remembered on this browser. You can forget it at any time.</p>
+      <div class="class-result" id="class-result" hidden>
+        <h3 id="chosen-class-title"></h3>
+        <p id="chosen-class-details"></p>
+        <p id="chosen-class-summary"></p>
+        <a class="text-link" id="chosen-class-link" href="events.html#request-spot">Ask about this class</a>
+      </div>
+      <div class="preference-actions">
+        <button id="remember-class" type="button" disabled>Remember this class</button>
+        <button class="secondary-button" id="forget-class" type="button" disabled>Forget my class</button>
+      </div>
+      <p class="feedback" id="preference-status" role="status" aria-live="polite"></p>
+    </section>
+    <noscript><p>JavaScript is needed to remember a class. You can still explore every class below and use the workshop form.</p></noscript>
     <section aria-labelledby="classes-title">
       <h2 id="classes-title">Find a class that fits your day</h2>
       <div class="card-row">
