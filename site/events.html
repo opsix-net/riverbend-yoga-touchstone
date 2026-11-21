@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshops and Requests | Riverbend Yoga Studio</title>
+  <meta name="description"
+    content="Explore monthly workshops and request class information.">
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+  <header>
+    <p>Riverbend Yoga Studio</p>
+    <h1>Workshops and interest requests</h1>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Classes and Sessions</a></li>
+        <li><a href="about.html">About Riverbend</a></li>
+        <li><a href="events.html" aria-current="page">Workshops and Requests</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section id="workshops" aria-labelledby="workshops-title">
+      <h2 id="workshops-title">Monthly workshops</h2>
+      <p>These sample recurring events offer time to learn and ask questions.</p>
+      <article>
+        <h3>Your First Yoga Visit</h3>
+        <p>First Saturday of each month,
+          <time datetime="10:00">10:00 a.m.</time> to
+          <time datetime="11:00">11:00 a.m.</time>.</p>
+        <p>Explore the studio, meet an instructor, and try simple seated
+          and standing movements. No previous yoga experience is needed.</p>
+      </article>
+      <article>
+        <h3>Desk-to-Mat Reset</h3>
+        <p>Second Wednesday of each month,
+          <time datetime="18:00">6:00 p.m.</time> to
+          <time datetime="19:00">7:00 p.m.</time>.</p>
+        <p>A practical introduction to an unhurried practice after a busy
+          day, with chair options and time to explore your own pace.</p>
+      </article>
+      <article>
+        <h3>Rest and Restore</h3>
+        <p>Last Sunday of each month,
+          <time datetime="15:00">3:00 p.m.</time> to
+          <time datetime="16:00">4:00 p.m.</time>.</p>
+        <p>Learn how cushions and blocks can support a quieter practice.</p>
+      </article>
+      <figure>
+        <img src="assets/yoga-workshop_c.png" width="240" height="147"
+          alt="An instructor leads a seated group practice in a bright studio.">
+        <figcaption>Learn together: our first-visit workshop leaves time
+          for questions, options, and a comfortable introduction.</figcaption>
+      </figure>
+    </section>
+
+    <section id="request-spot" aria-labelledby="request-title">
+      <h2 id="request-title">Request a spot or ask a question</h2>
+      <p id="form-note">This coursework sample checks your entries but
+        does not send a booking or reserve a place. Use sample details.</p>
+      <form action="events.html#request-spot" method="get"
+        aria-describedby="form-note">
+        <fieldset>
+          <legend>Your contact details</legend>
+          <p>
+            <label for="full-name">Name (required)</label><br>
+            <input id="full-name" name="full-name" type="text"
+              autocomplete="name" minlength="2" maxlength="80" required>
+          </p>
+          <p>
+            <label for="email">Email (required)</label><br>
+            <input id="email" name="email" type="email"
+              autocomplete="email" maxlength="254" required>
+          </p>
+          <p>
+            <label for="contact-method">Preferred contact method (required)</label><br>
+            <select id="contact-method" name="contact-method" required>
+              <option value="">Choose a contact method</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone call</option>
+            </select>
+          </p>
+          <p>
+            <label for="phone">Phone number (optional)</label><br>
+            <input id="phone" name="phone" type="tel"
+              autocomplete="tel" maxlength="30" aria-describedby="phone-help">
+            <small id="phone-help">Include a number if you prefer a call.</small>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your class or event interest</legend>
+          <p>
+            <label for="interest">Class or event (required)</label><br>
+            <select id="interest" name="interest" required>
+              <option value="">Choose a class or event</option>
+              <option value="gentle">Gentle Foundations</option>
+              <option value="vinyasa">Vinyasa Flow</option>
+              <option value="restorative">Restorative Pause</option>
+              <option value="private">Private session</option>
+              <option value="first-visit">Your First Yoga Visit workshop</option>
+              <option value="desk-reset">Desk-to-Mat Reset workshop</option>
+              <option value="rest-restore">Rest and Restore workshop</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Experience level (required)</legend>
+            <p>
+              <input id="experience-new" name="experience" type="radio"
+                value="new" required>
+              <label for="experience-new">I am new to yoga</label>
+            </p>
+            <p>
+              <input id="experience-some" name="experience" type="radio"
+                value="some">
+              <label for="experience-some">I have tried a few classes</label>
+            </p>
+            <p>
+              <input id="experience-regular" name="experience" type="radio"
+                value="regular">
+              <label for="experience-regular">I have a regular practice</label>
+            </p>
+          </fieldset>
+          <p>
+            <label for="message">Message (required, 10-1200 characters)</label><br>
+            <textarea id="message" name="message" rows="5" cols="28"
+              minlength="10" maxlength="1200" required></textarea>
+          </p>
+        </fieldset>
+        <p><button type="submit">Check interest request</button></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Riverbend Yoga Studio: make space for your practice.</p>
+    <p>Coursework sample. Schedules, prices, and staff profiles are illustrative.</p>
+    <p><a href="events.html#request-spot">Ask about your first visit</a></p>
+  </footer>
+</body>
+</html>
