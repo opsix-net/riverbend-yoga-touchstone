@@ -1,0 +1,139 @@
+{
+  "client": "Riverbend Yoga Studio",
+  "source_archive": "Yoga_c 2.zip",
+  "archive_sha256": "06e00d97ae33462f32710a336a5aa4b4e4696c76b94542bd11cf7e3c49aaf5ca",
+  "assets": [
+    {
+      "path": "site/assets/yoga-studio_c.png",
+      "source_member": "Yoga_c/yoga-studio_c.png",
+      "bytes": 971969,
+      "sha256": "279077e5eb76edc4e10661e04f60ba647ad650c9aa286fb808ad8bd0cd391275",
+      "dimensions": {
+        "width": 1200,
+        "height": 686
+      }
+    },
+    {
+      "path": "site/assets/yoga-instructor_c.png",
+      "source_member": "Yoga_c/yoga-instructor_c.png",
+      "bytes": 1963206,
+      "sha256": "e6264e848cc9cfa988dcdcc1e734b25e5259553ca6f5bccf7416a8872c0ecd95",
+      "dimensions": {
+        "width": 1200,
+        "height": 1200
+      }
+    },
+    {
+      "path": "site/assets/yoga-workshop_c.png",
+      "source_member": "Yoga_c/yoga-workshop_c.png",
+      "bytes": 1001120,
+      "sha256": "bdea20f920ca0775f857dacbd5dd3a99e3a534c642b77fe3d16dbb15112a2917",
+      "dimensions": {
+        "width": 1200,
+        "height": 737
+      }
+    },
+    {
+      "path": "site/assets/yoga-feature-small_c.png",
+      "source_member": "Yoga_c/yoga-feature-small_c.png",
+      "bytes": 771362,
+      "sha256": "700db661a5c804e9cf5c7a8a30c6193fbc4f7edaf4b021b91a6871c49e3317a5",
+      "dimensions": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "path": "site/assets/yoga-feature-large_c.png",
+      "source_member": "Yoga_c/yoga-feature-large_c.png",
+      "bytes": 993575,
+      "sha256": "8929ce90330bfc58193d88d423e8d2296790cea6336f539188b1cdc572a0a690",
+      "dimensions": {
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "path": "site/assets/yoga-logo_c.png",
+      "source_member": "Yoga_c/yoga-logo_c.png",
+      "bytes": 51456,
+      "sha256": "1f28137d67c474c52df367557e76c05589a56df7eb40bbe6d239691d2ab1e7e6",
+      "dimensions": {
+        "width": 1872,
+        "height": 1359
+      }
+    },
+    {
+      "path": "site/assets/yoga-breathing_c.mp3",
+      "source_member": "Yoga_c/yoga-breathing_c.mp3",
+      "bytes": 529807,
+      "sha256": "193602434c587dba07b9671177a8c8936b5266232c1377841f825326c3800b16",
+      "media_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.047347"
+        }
+      }
+    },
+    {
+      "path": "site/assets/yoga-intro_c.mp4",
+      "source_member": "Yoga_c/yoga-intro_c.mp4",
+      "bytes": 6324789,
+      "sha256": "06bc47aafa26d97b328a6c22a68a8fb89155dbeecec672eb0b07b6a1c24a049b",
+      "media_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "codec_type": "data"
+          }
+        ],
+        "format": {
+          "duration": "21.604917"
+        }
+      }
+    },
+    {
+      "path": "site/assets/yoga-breathing-44s.mp3",
+      "derived_from": "site/assets/yoga-breathing_c.mp3",
+      "bytes": 705141,
+      "sha256": "d2ec253913d901be85e82564d0bed50c38f56f05d85616bc3740cd13f336481a",
+      "media_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "44.042449"
+        }
+      },
+      "method": "Repeat the supplied clip once; encode MP3 at 128 kbit/s. The original file is unchanged.",
+      "authorization": "User selected Create the 44-second audio version on November 20, 2026.",
+      "runtime": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+    }
+  ],
+  "rights": "Supplied coursework assets; private assignment use only, no additional license grant inferred.",
+  "container": {
+    "registry": "mcr.microsoft.com",
+    "source_tag": "devcontainers/python:1-3.12-bookworm",
+    "digest": "sha256:7876580dc67fd460fd962f004cbeb480027e9bbc0657096f1087db11f9eaff39",
+    "retrieved_date": "2026-11-20"
+  },
+  "media_probe_runtime": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers"
+}
