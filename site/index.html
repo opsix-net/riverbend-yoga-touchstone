@@ -6,42 +6,57 @@
   <title>Home | Riverbend Yoga Studio</title>
   <meta name="description"
     content="An inclusive place to explore yoga at your own pace.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
-  <header>
-    <p>Riverbend Yoga Studio</p>
-    <h1>Make room for your practice</h1>
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="services.html">Classes and Sessions</a></li>
-        <li><a href="about.html">About Riverbend</a></li>
-        <li><a href="events.html">Workshops and Requests</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Riverbend Yoga Studio home">
+        <span class="brand-name">riverbend</span>
+        <span class="brand-description">YOGA STUDIO</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="services.html">Classes</a></li>
+          <li><a href="about.html">Our studio</a></li>
+          <li><a href="events.html">Workshops</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-heading">
+      <p class="eyebrow">Yoga for everyday life</p>
+      <h1>Make room for your practice</h1>
+      <p class="lede">A calm place to move, breathe, and begin again. No experience needed.</p>
+    </div>
   </header>
-  <main id="main-content" tabindex="-1">
-    <section aria-labelledby="welcome-title">
+  <main class="site-main" id="main-content" tabindex="-1">
+    <section class="welcome split" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
       <h2 id="welcome-title">A welcoming place to begin</h2>
       <p>We make room for movement, rest, and connection in everyday life.</p>
       <p>New to yoga? You do not need to be flexible or know the poses.
         Start where you are, ask questions, and take breaks whenever you like.</p>
-      <img src="assets/yoga-studio_c.png" width="280" height="160"
+      <p><a class="button" href="events.html#request-spot">Plan your first visit</a></p>
+      </div>
+      <img class="studio-image" src="assets/yoga-studio_c.png" width="1200" height="686"
         alt="Sunlit yoga studio with mats beside large windows.">
     </section>
 
-    <section aria-labelledby="featured-title">
+    <section class="featured band" aria-labelledby="featured-title">
+      <p class="eyebrow">Start with something gentle</p>
       <h2 id="featured-title">Featured class: Gentle Foundations</h2>
       <p>A slower introduction to standing and seated movement, with time
         to explore options using a chair, blocks, or a shorter sequence.</p>
       <p>This class welcomes beginners and anyone returning to practice.</p>
-      <p><a href="services.html#gentle">Explore Gentle Foundations</a></p>
+      <p><a class="text-link" href="services.html#gentle">Explore Gentle Foundations</a></p>
     </section>
 
-    <section aria-labelledby="schedule-title">
+    <section class="schedule" aria-labelledby="schedule-title">
       <h2 id="schedule-title">A week at Riverbend</h2>
       <p>This sample schedule offers morning, lunchtime, and evening choices.</p>
+      <div class="table-scroll" role="region" aria-label="Weekly class schedule" tabindex="0">
       <table>
         <caption>Sample weekly class overview</caption>
         <thead>
@@ -69,10 +84,11 @@
           </tr>
         </tbody>
       </table>
+      </div>
       <p><a href="events.html#workshops">View monthly workshops</a></p>
     </section>
 
-    <section aria-labelledby="practice-title">
+    <section class="practice" aria-labelledby="practice-title">
       <h2 id="practice-title">Your practice can grow with you</h2>
       <picture>
         <source media="(min-width: 48rem)"
@@ -84,10 +100,12 @@
         A quiet seated practice belongs here just as much.</p>
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
     <p>Riverbend Yoga Studio: make space for your practice.</p>
     <p>Coursework sample. Schedules, prices, and staff profiles are illustrative.</p>
     <p><a href="events.html#request-spot">Ask about your first visit</a></p>
+    </div>
   </footer>
 </body>
 </html>

@@ -6,22 +6,32 @@
   <title>About | Riverbend Yoga Studio</title>
   <meta name="description"
     content="Meet our sample instructor team and explore studio access and policies.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
-  <header>
-    <p>Riverbend Yoga Studio</p>
-    <h1>About Riverbend</h1>
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Classes and Sessions</a></li>
-        <li><a href="about.html" aria-current="page">About Riverbend</a></li>
-        <li><a href="events.html">Workshops and Requests</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Riverbend Yoga Studio home">
+        <span class="brand-name">riverbend</span>
+        <span class="brand-description">YOGA STUDIO</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Classes</a></li>
+          <li><a href="about.html" aria-current="page">Our studio</a></li>
+          <li><a href="events.html">Workshops</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-heading">
+      <p class="eyebrow">A studio for every body</p>
+      <h1>About Riverbend</h1>
+      <p class="lede">Meet the people and thoughtful choices that make a first visit feel easier.</p>
+    </div>
   </header>
-  <main id="main-content" tabindex="-1">
+  <main class="site-main" id="main-content" tabindex="-1">
     <section aria-labelledby="story-title">
       <h2 id="story-title">Practice for everyday people</h2>
       <p>Riverbend is a neighborhood studio built around a simple idea:
@@ -32,17 +42,17 @@
         version of a pose that everyone must perform.</p>
     </section>
 
-    <section aria-labelledby="team-title">
+    <section class="team" aria-labelledby="team-title">
       <h2 id="team-title">Meet the instructor team</h2>
-      <img src="assets/yoga-instructor_c.png" width="280" height="280"
+      <img src="assets/yoga-instructor_c.png" width="1200" height="1200"
         alt="An instructor holds a rolled yoga mat in the studio.">
-      <article>
+      <article class="instructor">
         <h3>Maya Chen: gentle and restorative practice</h3>
         <p>Maya welcomes first-time students with clear instructions,
           unhurried transitions, and time for questions. She offers chair and prop
           options so students can explore a comfortable starting point.</p>
       </article>
-      <article>
+      <article class="instructor">
         <h3>Jordan Reed: flow and private sessions</h3>
         <p>Jordan creates practical sequences for busy days.
           His classes include choices to adjust the pace and space
@@ -50,6 +60,7 @@
       </article>
     </section>
 
+    <div class="section-row">
     <section aria-labelledby="access-title">
       <h2 id="access-title">Access and accommodations</h2>
       <ul>
@@ -73,11 +84,14 @@
         <li>Please request booking changes a day before a session.</li>
       </ul>
     </section>
+    </div>
   </main>
-  <footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
     <p>Riverbend Yoga Studio: make space for your practice.</p>
     <p>Coursework sample. Schedules, prices, and staff profiles are illustrative.</p>
     <p><a href="events.html#request-spot">Ask about your first visit</a></p>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,0 +1,154 @@
+/* Riverbend Yoga Studio: shared, mobile-first design for Touchstone 3. */
+:root {
+  --forest: #173F35;
+  --sage: #DDE8DF;
+  --ivory: #F7F6EF;
+  --ink: #1D2F2A;
+  --content-width: 72rem;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+a { color: var(--forest); text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex="0"]:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 4px;
+}
+h1, h2 { font-family: Georgia, serif; font-weight: 400; }
+h1 { margin: .5rem 0 1rem; font-size: 2.6rem; line-height: 1.08; max-width: 17ch; }
+h2 { margin: 0 0 1rem; font-size: 2rem; line-height: 1.2; }
+h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 .75rem; }
+p { margin: 0 0 1rem; max-width: 66ch; }
+ul { padding-left: 1.25rem; }
+li + li { margin-top: .5rem; }
+img { display: block; max-width: 100%; height: auto; }
+picture { display: block; }
+figure { margin: 2rem 0 0; }
+figcaption { margin-top: .75rem; font-size: .9375rem; }
+small { display: block; font-size: .875rem; margin-top: .5rem; }
+.skip-link {
+  position: absolute; left: 1rem; top: .5rem;
+  transform: translateY(-200%); padding: .75rem 1rem;
+  z-index: 2; background: var(--ivory); color: var(--forest);
+}
+.skip-link:focus { transform: translateY(0); }
+.header-inner, .page-heading, .site-main, .footer-inner {
+  width: min(var(--content-width), calc(100% - 2rem));
+  margin-inline: auto;
+}
+.header-inner {
+  display: flex; flex-direction: column; gap: 1.25rem;
+  align-items: flex-start; padding-block: 1.25rem;
+  border-bottom: 1px solid var(--sage);
+}
+.brand { text-decoration: none; display: block; flex-shrink: 0; }
+.brand-name { display: block; font-family: Georgia, serif; font-size: 2rem; line-height: 1; }
+.brand-description { display: block; font-size: .875rem; letter-spacing: .17em; margin-top: .4rem; }
+nav { width: 100%; }
+nav ul { display: flex; flex-wrap: wrap; gap: .35rem .5rem; list-style: none; margin: 0; padding: 0; }
+nav li + li { margin: 0; }
+nav a { display: block; padding: .6rem .75rem; text-decoration: none; font-size: 1rem; }
+nav a:hover { background: var(--sage); }
+nav a[aria-current="page"] { background: var(--forest); color: var(--ivory); }
+.page-heading { padding-block: 2rem 2.5rem; }
+.eyebrow { font-size: .875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--forest); }
+.lede { font-size: 1.125rem; max-width: 52ch; margin-bottom: 0; }
+.site-main { padding-bottom: 3rem; }
+.site-main > section, .site-main > div { margin-bottom: 2rem; }
+.site-main section { min-width: 0; }
+.site-main section > :last-child, article > :last-child { margin-bottom: 0; }
+.split, .section-row, .card-row { display: flex; flex-direction: column; gap: 1.5rem; }
+.welcome { background: var(--sage); }
+.welcome-copy { padding: 1.5rem 1.5rem 0; flex: 1; min-width: 0; }
+.studio-image { width: 100%; object-fit: cover; }
+.button, button {
+  display: inline-block; border: 2px solid var(--forest);
+  padding: .75rem 1.15rem; background: var(--forest); color: var(--ivory);
+  font: 700 1rem/1.4 Arial, sans-serif; text-decoration: none;
+  cursor: pointer; max-width: 100%;
+}
+.button:hover, button:hover { background: var(--ivory); color: var(--forest); }
+.button:focus-visible, button:focus-visible { outline-offset: 4px; }
+.band { padding: 1.5rem; border-block: 1px solid var(--forest); }
+.featured h2 { max-width: 28ch; }
+.text-link { font-weight: 700; }
+.table-scroll { max-width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+caption { text-align: left; font-weight: 700; margin-bottom: .75rem; }
+th, td { text-align: left; padding: .8rem .5rem; border-bottom: 1px solid var(--sage); }
+thead { background: var(--sage); }
+.practice picture { margin-block: 1.5rem; }
+.practice img { width: 100%; max-height: 30rem; object-fit: contain; background: var(--sage); }
+.card-row > article { flex: 1; background: var(--sage); padding: 1.5rem; }
+.section-row > section { flex: 1; min-width: 0; padding: 1.5rem; border: 1px solid var(--forest); }
+dt { font-weight: 700; }
+dd { margin: 0 0 1rem; }
+audio { display: block; width: 100%; max-width: 34rem; margin-block: 1rem; }
+.team { display: flex; flex-direction: column; gap: 1.25rem; }
+.team > h2 { flex-basis: 100%; }
+.team > img { width: 100%; max-width: 22rem; object-fit: cover; }
+.instructor { flex: 1; }
+.events-layout { display: flex; flex-direction: column; gap: 2rem; align-items: stretch; }
+.workshop-list article { margin-top: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--sage); }
+.workshop-list img { width: 100%; }
+.request-panel { background: var(--sage); padding: 1.25rem; }
+.form-note { font-size: .9375rem; }
+fieldset { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--forest); min-width: 0; }
+legend { padding-inline: .35rem; font-weight: 700; max-width: 100%; }
+label { font-size: 1rem; }
+input, select, textarea { font: inherit; color: var(--ink); }
+input:not([type="radio"]), select, textarea {
+  display: block; width: 100%; min-width: 0; max-width: 100%; min-height: 2.75rem;
+  border: 1px solid var(--forest); border-radius: 0; background: var(--ivory); padding: .65rem;
+}
+select { appearance: none; padding-right: 2.25rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12'%3E%3Cpath d='m2 3 6 6 6-6' fill='none' stroke='%23173F35' stroke-width='2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .7rem center; }
+textarea { resize: vertical; }
+form br { display: none; }
+form label { display: inline-block; margin-bottom: .35rem; }
+input[type="radio"] { width: 1.2rem; height: 1.2rem; margin: .25rem .45rem .25rem 0; accent-color: var(--forest); vertical-align: middle; }
+fieldset fieldset { background: var(--ivory); }
+.site-footer { background: var(--forest); color: var(--ivory); padding-block: 2rem; }
+.site-footer a { color: var(--ivory); }
+.site-footer a:focus-visible { outline-color: var(--ivory); }
+.site-footer p { font-size: .9375rem; }
+.site-footer p:first-child { font-family: Georgia, serif; font-size: 1.4rem; }
+.site-footer p:last-child { margin-bottom: 0; }
+/* Larger screens add columns; the base layout remains a single readable column. */
+@media (min-width: 48rem) {
+  .header-inner, .page-heading, .site-main, .footer-inner { width: min(var(--content-width), calc(100% - 4rem)); }
+  .header-inner { flex-direction: row; align-items: center; justify-content: space-between; padding-block: 1.5rem; }
+  nav { width: auto; }
+  .page-heading { padding-block: 3rem; }
+  h1 { font-size: 4.5rem; }
+  h2 { font-size: 2.3rem; }
+  .site-main { padding-bottom: 4rem; }
+  .site-main > section, .site-main > div { margin-bottom: 3rem; }
+  .split, .section-row, .card-row { flex-direction: row; gap: 2rem; }
+  .welcome { gap: 0; align-items: stretch; }
+  .welcome-copy { padding: 2rem; align-self: center; }
+  .studio-image { width: 52%; min-width: 0; object-fit: cover; }
+  .band { padding: 2.5rem; }
+  .team { flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: center; }
+  .team > h2 { margin-bottom: 0; }
+  .team > img { width: 30%; }
+}
+@media (min-width: 64rem) {
+  .events-layout { flex-direction: row; gap: 3rem; }
+  .workshop-list { flex: 1; }
+  .request-panel { flex: 1; padding: 2rem; }
+}
+@media print {
+  .skip-link { display: none; }
+  body { background: var(--ivory); }
+  .site-footer { color: var(--ink); background: transparent; }
+  .site-footer a { color: var(--ink); }
+}

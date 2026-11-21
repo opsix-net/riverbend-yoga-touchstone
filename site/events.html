@@ -6,23 +6,33 @@
   <title>Workshops and Requests | Riverbend Yoga Studio</title>
   <meta name="description"
     content="Explore monthly workshops and request class information.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
-  <header>
-    <p>Riverbend Yoga Studio</p>
-    <h1>Workshops and interest requests</h1>
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Classes and Sessions</a></li>
-        <li><a href="about.html">About Riverbend</a></li>
-        <li><a href="events.html" aria-current="page">Workshops and Requests</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Riverbend Yoga Studio home">
+        <span class="brand-name">riverbend</span>
+        <span class="brand-description">YOGA STUDIO</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Classes</a></li>
+          <li><a href="about.html">Our studio</a></li>
+          <li><a href="events.html" aria-current="page">Workshops</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-heading">
+      <p class="eyebrow">Practice in good company</p>
+      <h1>Workshops and interest requests</h1>
+      <p class="lede">Explore something new, ask a question, and take the next step at your own pace.</p>
+    </div>
   </header>
-  <main id="main-content" tabindex="-1">
-    <section id="workshops" aria-labelledby="workshops-title">
+  <main class="site-main events-layout" id="main-content" tabindex="-1">
+    <section class="workshop-list" id="workshops" aria-labelledby="workshops-title">
       <h2 id="workshops-title">Monthly workshops</h2>
       <p>These sample recurring events offer time to learn and ask questions.</p>
       <article>
@@ -49,16 +59,16 @@
         <p>Learn how cushions and blocks can support a quieter practice.</p>
       </article>
       <figure>
-        <img src="assets/yoga-workshop_c.png" width="240" height="147"
+        <img src="assets/yoga-workshop_c.png" width="1200" height="737"
           alt="An instructor leads a seated group practice in a bright studio.">
         <figcaption>Learn together: our first-visit workshop leaves time
           for questions, options, and a comfortable introduction.</figcaption>
       </figure>
     </section>
 
-    <section id="request-spot" aria-labelledby="request-title">
+    <section class="request-panel" id="request-spot" aria-labelledby="request-title">
       <h2 id="request-title">Request a spot or ask a question</h2>
-      <p id="form-note">This coursework sample checks your entries but
+      <p class="form-note" id="form-note">This coursework sample checks your entries but
         does not send a booking or reserve a place. Use sample details.</p>
       <form action="events.html#request-spot" method="get"
         aria-describedby="form-note">
@@ -133,10 +143,12 @@
       </form>
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
     <p>Riverbend Yoga Studio: make space for your practice.</p>
     <p>Coursework sample. Schedules, prices, and staff profiles are illustrative.</p>
     <p><a href="events.html#request-spot">Ask about your first visit</a></p>
+    </div>
   </footer>
 </body>
 </html>

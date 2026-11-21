@@ -6,24 +6,35 @@
   <title>Classes and Sessions | Riverbend Yoga Studio</title>
   <meta name="description"
     content="Explore group classes and private yoga sessions.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
-  <header>
-    <p>Riverbend Yoga Studio</p>
-    <h1>Classes and private sessions</h1>
-    <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" aria-current="page">Classes and Sessions</a></li>
-        <li><a href="about.html">About Riverbend</a></li>
-        <li><a href="events.html">Workshops and Requests</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Riverbend Yoga Studio home">
+        <span class="brand-name">riverbend</span>
+        <span class="brand-description">YOGA STUDIO</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Classes</a></li>
+          <li><a href="about.html">Our studio</a></li>
+          <li><a href="events.html">Workshops</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-heading">
+      <p class="eyebrow">Find your own rhythm</p>
+      <h1>Classes and private sessions</h1>
+      <p class="lede">Gentle movement, steady flow, or time to rest. There is room for your pace.</p>
+    </div>
   </header>
-  <main id="main-content" tabindex="-1">
+  <main class="site-main" id="main-content" tabindex="-1">
     <section aria-labelledby="classes-title">
       <h2 id="classes-title">Find a class that fits your day</h2>
+      <div class="card-row">
       <article id="gentle">
         <h3>Gentle Foundations</h3>
         <p>A 45-minute, slower-paced class with clear instructions and
@@ -39,15 +50,17 @@
         <p>A 45-minute, unhurried class using cushions and blocks for
           supported positions. Expect fewer transitions and time to rest.</p>
       </article>
+      </div>
     </section>
 
+    <div class="section-row">
     <section aria-labelledby="private-title">
       <h2 id="private-title">Private sessions</h2>
       <p>Request a one-to-one, 60-minute session to discuss your goals,
         learn the studio routine, or explore variations at your own pace.</p>
       <p>Let us know about access needs before your visit so we can discuss
         the space, props, and session format together.</p>
-      <p><a href="events.html#request-spot">Ask about a private session</a></p>
+      <p><a class="button" href="events.html#request-spot">Ask about a private session</a></p>
     </section>
 
     <section aria-labelledby="pricing-title">
@@ -65,7 +78,8 @@
         about a class, a workshop, or a possible session time.</p>
     </section>
 
-    <section aria-labelledby="breathing-title">
+    </div>
+    <section class="band breathing" aria-labelledby="breathing-title">
       <h2 id="breathing-title">Take a short breathing pause</h2>
       <p>Listen to this approximately 44-second practice. Pause or replay
         the recording whenever you like.</p>
@@ -81,10 +95,12 @@
         your eyes open and stop whenever you wish.</p>
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
     <p>Riverbend Yoga Studio: make space for your practice.</p>
     <p>Coursework sample. Schedules, prices, and staff profiles are illustrative.</p>
-    <p><a href="events.html#request-spot">Ask about your first visit</a></p>
+    <p><a class="button" href="events.html#request-spot">Ask about your first visit</a></p>
+    </div>
   </footer>
 </body>
 </html>
